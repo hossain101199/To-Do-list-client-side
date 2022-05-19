@@ -7,7 +7,12 @@ const InputForm = ({ handleADDtask }) => {
         <div className="input-group mb-3 mt-5"></div>
         <div className="mb-3 input-group">
           <span className="input-group-text">Task name</span>
-          <input type="text" className="form-control" name="taskName" />
+          <input
+            type="text"
+            className="form-control"
+            name="taskName"
+            required
+          />
         </div>
         <div className="mb-3 input-group">
           <span className="input-group-text ">Task description</span>
@@ -15,6 +20,7 @@ const InputForm = ({ handleADDtask }) => {
             className="form-control"
             aria-label="With textarea"
             name="taskDescription"
+            required
           ></textarea>
         </div>
         <div className="mt-3 text-center">
